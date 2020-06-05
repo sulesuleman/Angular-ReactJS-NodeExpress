@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12">
+           <h3>Edit Student</h3>
+        </div>
+         <div class="col-12 col-md-9">
+            
+            <form > 
+                 
+                 <div class="form-group row">
+                     <label for="sname" class="col-md-2 col-form-label">Student's Name:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="sname" name="sname" 
+                            placeholder="Student's Name" #stdname [(ngModel)]="sname">
+                        </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="rollno" class="col-md-2 col-form-label">Roll Number:</label>
+                     <div class="col-md-10">
+                        <input type="text" class="form-control" id="rollno" #num [(ngModel)]="srollno" name="rollno" placeholder="Roll Number">
+                     </div>
+                    </div>
+                 
+                 <div class="form-group row">
+                     <div class="offset-md-2 col-md-10">
+                         <button type="primary" (click)="editval()" class="btn btn-primary">Done</button>
+                     </div>
+                 </div>
+             </form>
+    
+         </div>
+          <div class="col-12 col-md">
+        
+        </div>
+    
+        </div>
+    
+    </div>
+    
+    

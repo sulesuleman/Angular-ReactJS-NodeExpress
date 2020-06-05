@@ -1,0 +1,50 @@
+<!-- <div class="row row-content">
+    <div class="col-12 col-sm-9">
+        <h2>List of Students Registered</h2>
+    </div>
+     <div class="col-12 col-sm-3">
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th colspan="2">Control</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.rollno}}</td>
+                    <td><button (click)="delval(student._id)">Delete</button></td>
+                    <td><button (click)="n(student._id)"> Edit Student</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+<div id="bg" style="padding: 5%;padding-top: 3%;">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Student Name</th>
+      <th scope="col">Roll Number</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students let i=index">
+        <th style="color:brown">{{i+1}}</th>
+        <td>{{student.name}}</td>
+        <td>{{student.rollno}}</td>
+        <td><button (click)="delval(student._id)" mat-raised-button color="warn">Delete</button></td>
+      <td><button mat-raised-button color="primary" (click)="n(student._id)">Edit Student</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
